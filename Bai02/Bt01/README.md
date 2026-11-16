@@ -235,6 +235,7 @@ const styles = StyleSheet.create({
 
 
 - **Footer.js:** Hiển thị thông tin liên hệ.
+- 
   <img width="600" height="685" alt="image" src="https://github.com/user-attachments/assets/b2c3feae-5e5a-43bb-887f-0d24f8403b06" />
 
 
