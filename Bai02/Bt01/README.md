@@ -93,10 +93,150 @@ MyApp_V2/
     └── Footer.js
 ```
 
-- **App.js:** Kết nối và hiển thị các component.
+- **App.js:** Kết nối và hiển thị các component
+
+<img width="384" height="153" alt="image" src="https://github.com/user-attachments/assets/6ab3abfd-1812-48a9-a52e-a4fcaa692cdc" />
+
+
 - **Header.js:** Xây dựng phần đầu ứng dụng.
+<img width="510" height="664" alt="image" src="https://github.com/user-attachments/assets/2bb8e6bc-e394-43ed-8560-ee479eeb7cbc" />
+
+
 - **Main.js:** Hiển thị danh sách phòng khách sạn.
+
+import React from 'react';
+import {
+  View,
+  Text,
+  Image,
+  StyleSheet,
+  ScrollView,
+  TouchableOpacity
+} from 'react-native';
+
+export default function Main() {
+  const rooms = [
+    {
+      name: 'PHÒNG ĐƠN',
+      price: '800.000 VNĐ',
+      image: 'https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=400'
+    },
+    {
+      name: 'PHÒNG ĐÔI',
+      price: '1.300.000 VNĐ',
+      image: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=400'
+    },
+    {
+      name: 'PHÒNG VIP',
+      price: '1.800.000 VNĐ',
+      image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=400'
+    },
+    {
+      name: 'PHÒNG GIA ĐÌNH',
+      price: '2.500.000 VNĐ',
+      image: 'https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=400'
+    }
+  ];
+
+  return (
+    <ScrollView style={styles.container}>
+      <Text style={styles.title}>SÂM TRAVEL</Text>
+      <Text style={styles.subtitle}>DANH SÁCH PHÒNG</Text>
+
+      {rooms.map((room, index) => (
+        <View style={styles.card} key={index}>
+          <View style={styles.info}>
+            <Text style={styles.name}>{room.name}</Text>
+
+            <Text style={styles.price}>{room.price}</Text>
+
+            <Text style={styles.status}>✓ Còn phòng</Text>
+
+            <TouchableOpacity
+              style={styles.button}
+              onPress={() => {}}
+            >
+              <Text style={styles.buttonText}>
+                ĐẶT PHÒNG NGAY
+              </Text>
+            </TouchableOpacity>
+          </View>
+
+          <Image
+            source={{ uri: room.image }}
+            style={styles.image}
+          />
+        </View>
+      ))}
+    </ScrollView>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    padding: 15,
+    backgroundColor: '#F0F5FF'
+  },
+  title: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    color: '#1769D2'
+  },
+  subtitle: {
+    fontSize: 17,
+    fontWeight: 'bold',
+    marginVertical: 15
+  },
+  card: {
+    flexDirection: 'row',
+    backgroundColor: 'white',
+    padding: 12,
+    borderRadius: 12,
+    marginBottom: 15,
+    alignItems: 'center'
+  },
+  info: {
+    flex: 1
+  },
+  name: {
+    fontWeight: 'bold',
+    color: '#174A8B',
+    fontSize: 15
+  },
+  price: {
+    color: 'red',
+    fontWeight: 'bold',
+    marginTop: 10
+  },
+  status: {
+    color: 'green',
+    marginTop: 8
+  },
+  button: {
+    backgroundColor: 'green',
+    padding: 9,
+    borderRadius: 7,
+    marginTop: 12,
+    alignItems: 'center',
+    marginRight: 5
+  },
+  buttonText: {
+    color: 'white',
+    fontSize: 12,
+    fontWeight: 'bold'
+  },
+  image: {
+    width: 120,
+    height: 110,
+    borderRadius: 10
+  }
+});
+
+
 - **Footer.js:** Hiển thị thông tin liên hệ.
+  <img width="600" height="685" alt="image" src="https://github.com/user-attachments/assets/b2c3feae-5e5a-43bb-887f-0d24f8403b06" />
+
 
 ## 5. Kết quả thực hiện
 
