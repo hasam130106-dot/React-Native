@@ -11,18 +11,13 @@
 ## 2. Hình ảnh giao diện
 
 ### Giao diện chính
-<img width="661" height="567" alt="image" src="https://github.com/user-attachments/assets/addefb96-a6c5-4617-844f-32c58e748710" />
-<img width="325" height="306" alt="image" src="https://github.com/user-attachments/assets/8fa90638-af52-46f3-9224-be5b5520a201" />
-<img width="324" height="314" alt="image" src="https://github.com/user-attachments/assets/3f8c6d80-07e6-4cf7-88f0-37e9943e83a3" />
+<img width="595" height="586" alt="image" src="https://github.com/user-attachments/assets/e812e089-d6b3-4356-af86-d6ea73cb45b6" />
 
 
 
 
-### Code App.js
-![App.js](images/app.png)
 
-### Component ProductCard.js
-![ProductCard.js](images/productcard.png)
+
 
 ## 3. Các chức năng chính
 
