@@ -34,4 +34,4 @@
 ## 5. Link nộp bài
 
 - **Link Expo:(https://snack.expo.dev/@sam79vs/productapp)
-- **Link GitHub Bt03:** Dán link GitHub tại đây.
+- **Link GitHub Bt03:(https://github.com/hasam130106-dot/React-Native/tree/main/Bai02/Bt03)
